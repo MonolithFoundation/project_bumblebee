@@ -25,7 +25,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Bumblebee: Advancing Beyond Closed-Source Multi-Modal Models through Token Shrinkage</title>
+  <title>Bumblebee: Revolutionizing Open-Source Multi-Modal Learning through Dynamic Token Optimization and Dimensional Compression  </title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
@@ -52,8 +52,8 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Bumblebee: Advancing Beyond Closed-Source Multi-Modal Models
-              through Token Shrinkage</h1>
+            <h1 class="title is-1 publication-title">Bumblebee: Revolutionizing Open-Source Multi-Modal Learning through Dynamic Token Optimization and Dimensional Compression
+            </h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -146,23 +146,13 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              Multi-modal Large Language Models (MLLMs) are at the forefront of artificial intelligence research, aiming
-              to create models capable of understanding, learning, and generating multiple data types, including text,
-              images, and sound. Despite the potential, significant challenges persist, including the integration of
-              suitable vision encoders and LLMs, the scarcity of comprehensive multi-modal datasets, and the need for
-              efficient performance improvement.
+              Multi-modal Large Language Models (MLLMs) represent a cutting-edge frontier in artificial intelligence research, advancing the development of systems capable of comprehending, learning, and generating diverse data modalities including text, images, and audio. Despite significant progress, fundamental challenges remain unresolved, particularly in seamlessly integrating vision encoders with LLMs, addressing the limitations of multi-modal datasets, and achieving efficient performance optimization.
 
-              A performance gap currently exists between closed-source models, often developed by resource-rich tech
-              companies, and open-source models. However, the open-source community is making substantial strides,
-              driven by collaboration and resource availability.
+While closed-source models developed by well-resourced technology companies have demonstrated superior performance, a notable capability gap exists between these proprietary systems and their open-source counterparts. Nevertheless, the open-source community continues to make remarkable progress through collaborative efforts and innovative resource utilization.
 
-              Our work with the Bumblebee model, an open-source MLLM, exemplifies this progress. By implementing token
-              shrinkage and developing an efficient projector called STSR (Scalable Token Shrinkage Resampler),
-              Bumblebee has surpassed the closed-source QwenVL Max on the MMBench-Test-CN with a score of 75.9, using
-              only open-source data and 14 billion LLM parameters. This surpasses the current open-source
-              state-of-the-art Yi-34B-VL by 5.9 points on MMBench-Test-CN, despite having fewer parameters. This
-              achievement underscores the potential of open-source models to compete with, and potentially surpass,
-              their closed-source counterparts, signaling a promising future for open-source multi-modal learning.
+In this paper, we present Bumblebee, an advanced open-source MLLM that significantly narrows this performance gap. Our key innovation lies in a novel Vision Encoder architecture featuring two primary contributions: (1) a specialized pretraining framework enhanced with WindowAttention mechanism, and (2) an adaptive 2D Learnable Position embedding system. This architectural design efficiently manages variable input resolutions while maintaining controlled token output, effectively addressing the computational challenges in processing high-resolution inputs. Through strategic Vision Encoder fine-tuning with limited computational resources and subsequent integration with the MLLM framework, Bumblebee achieves remarkable results.
+
+Our experimental evaluations demonstrate Bumblebee's exceptional performance, achieving a score of 75.9 on MMBench-Test-CN, surpassing the closed-source QwenVL Max while utilizing only open-source training data and 14 billion parameters. Notably, this performance represents a 5.9-point improvement over the current open-source state-of-the-art Yi-34B-VL, despite employing significantly fewer parameters. These results not only validate our architectural innovations but also demonstrate the potential of open-source models to compete with and exceed their closed-source counterparts, marking a significant milestone in open-source multi-modal learning.
             </p>
           </div>
         </div>
